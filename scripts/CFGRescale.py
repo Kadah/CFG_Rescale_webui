@@ -45,7 +45,7 @@ class Script(scripts.Script):
 
     def ui(self, is_img2img):
         with gr.Accordion("CFG Rescale", open=True, elem_id="cfg_rescale"):
-            rescale = gr.Slider(label="CFG Rescale", show_label=False, minimum=0.0, maximum=1.0, step=0.01, value=0.0)
+            rescale = gr.Slider(label="CFG Rescale Value", show_label=False, minimum=0.0, maximum=1.0, step=0.01, value=0.0)
             trailing = gr.Checkbox(label="DDIM Trailing", default=False)
         self.infotext_fields = [
             (rescale, "CFG Rescale"),
